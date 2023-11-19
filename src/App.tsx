@@ -11,6 +11,9 @@ function App() {
 
     if (!isLiked)
       setCount(count + 1);
+
+    if (count > 0)
+      setCount(0);
   }
 
   return (
