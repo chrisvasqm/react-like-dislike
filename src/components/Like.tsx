@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/react";
+import { BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
 
 interface Props {
     isLiked: boolean;
@@ -13,8 +14,11 @@ function Like({ isLiked, count, onClick }: Props) {
             borderBottomLeftRadius={'20px'}
             borderTopRightRadius={'0px'}
             borderBottomRightRadius={'0px'}
+            gap={2}
             onClick={onClick}>
-            Icon {count}
+
+            {isLiked ? <BsHandThumbsUpFill /> : <BsHandThumbsUp />} {count}
+
         </Button>
     )
 }
