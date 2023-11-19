@@ -7,7 +7,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   function handleLike() {
-    setCount(count + 1);
+    setIsLiked(!isLiked);
+
+    if (!isLiked)
+      setCount(count + 1);
   }
 
   return (
