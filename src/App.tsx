@@ -1,6 +1,8 @@
+import { Heading } from "@chakra-ui/react";
+
 function App() {
   return (
-    <h1>React app</h1>
+    <Heading>React app</Heading>
   )
 }
 
