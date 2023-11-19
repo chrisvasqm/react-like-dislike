@@ -1,13 +1,12 @@
 import { Button } from "@chakra-ui/react";
-import { BsHandThumbsDown, BsHandThumbsDownFill, BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
+import { BsHandThumbsDown, BsHandThumbsDownFill } from "react-icons/bs";
 
 interface Props {
     isLiked: boolean;
-    count: number;
     onClick: () => void;
 }
 
-function Dislike({ isLiked, count, onClick }: Props) {
+function Dislike({ isLiked, onClick }: Props) {
     return (
         <Button
             padding={4}

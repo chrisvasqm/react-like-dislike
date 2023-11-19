@@ -11,7 +11,7 @@ function LikeWidget({ isLiked, count, onClick }: Props) {
     return (
         <>
             <Like isLiked={isLiked} count={count} onClick={onClick} />
-            <Dislike isLiked={isLiked} count={count} onClick={onClick} />
+            <Dislike isLiked={isLiked} onClick={onClick} />
         </>
     )
 }
