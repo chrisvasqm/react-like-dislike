@@ -10,6 +10,7 @@ interface Props {
 function Like({ isLiked, count, onClick }: Props) {
     return (
         <Button
+            padding={4}
             borderTopLeftRadius={'20px'}
             borderBottomLeftRadius={'20px'}
             borderTopRightRadius={'0px'}

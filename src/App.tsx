@@ -1,6 +1,6 @@
 import { Box, Heading } from "@chakra-ui/react";
-import Like from "./components/Like";
 import { useState } from "react";
+import LikeWidget from "./components/LikeWidget";
 
 function App() {
   const [isLiked, setIsLiked] = useState(false);
@@ -19,7 +19,7 @@ function App() {
   return (
     <Box padding={4}>
       <Heading>Like and Dislike</Heading>
-      <Like isLiked={isLiked} count={count} onClick={handleLike} />
+      <LikeWidget isLiked={isLiked} count={count} onClick={handleLike} />
     </Box>
   )
 }
